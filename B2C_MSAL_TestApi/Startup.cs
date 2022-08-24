@@ -57,7 +57,10 @@ namespace B2C_MSAL_TestApi
                     policy =>
                     {
                         policy
-                            .WithOrigins("http://localhost:3000")
+                            .WithOrigins(
+                                "http://localhost:3000",
+                                "https://thankful-forest-09c977103.1.azurestaticapps.net"
+                            )
                             .WithHeaders("Authorization")
                             .WithMethods("GET");
                     });
