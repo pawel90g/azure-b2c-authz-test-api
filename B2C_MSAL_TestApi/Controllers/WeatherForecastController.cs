@@ -11,7 +11,7 @@ namespace B2C_MSAL_TestApi.Controllers
     [ApiController]
     [Route("[controller]")]
     [Authorize]
-    //[RequiredScope(scopeRequiredByAPI)]
+    [RequiredScope(scopeRequiredByAPI)]
     public class WeatherForecastController : ControllerBase
     {
         const string scopeRequiredByAPI = "Weather.Read";
